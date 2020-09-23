@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FontIconProblem.MainPage">
+
+    <Grid ColumnSpacing="36" Margin="50" RowSpacing="36">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label HorizontalOptions="Center" Text="UWP FontImageSource minimize problem" FontSize="20" />
+            <Label HorizontalOptions="Center" Text="> minimize for 5 seconds then images will disappear" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+            <ImageButton HorizontalOptions="Center">
+                <ImageButton.Source>
+                    <FontImageSource
+                                FontFamily="FontAwesome"
+                                Glyph="&#xf0f3;"
+                                Size="26"
+                                Color="Black">
+                    </FontImageSource>
+                </ImageButton.Source>
+            </ImageButton>
+            <Label HorizontalOptions="Center" Text="ImageButton test1" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <ImageButton HorizontalOptions="Center">
+                <ImageButton.Source>
+                    <FontImageSource
+                                FontFamily="FontAwesome"
+                                Glyph="&#xf0f2;"
+                                Size="26"
+                                Color="Black">
+                    </FontImageSource>
+                </ImageButton.Source>
+            </ImageButton>
+            <Label HorizontalOptions="Center" Text="ImageButton test2" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image HorizontalOptions="Center">
+                <Image.Source>
+                    <FontImageSource
+                                FontFamily="FontAwesome"
+                                Glyph="&#xf017;"
+                                Size="100"
+                                Color="Black">
+                    </FontImageSource>
+                </Image.Source>
+            </Image>
+            <Label HorizontalOptions="Center" Text="Image test1" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image HorizontalOptions="Center">
+                <Image.Source>
+                    <FontImageSource
+                                FontFamily="FontAwesome"
+                                Glyph="&#xf010;"
+                                Size="100"
+                                Color="Black">
+                    </FontImageSource>
+                </Image.Source>
+            </Image>
+            <Label HorizontalOptions="Center" Text="Image test2" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
