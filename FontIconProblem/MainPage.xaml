@@ -20,17 +20,17 @@
         </StackLayout>
 
         <StackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
-            <ImageButton HorizontalOptions="Center">
-                <ImageButton.Source>
-                    <FontImageSource
+            <Button HorizontalOptions="Center" ContentLayout="Left" >
+                <Button.ImageSource>
+                    <FontImageSource                                
                                 FontFamily="FontAwesome"
                                 Glyph="&#xf0f3;"
                                 Size="26"
                                 Color="Black">
                     </FontImageSource>
-                </ImageButton.Source>
-            </ImageButton>
-            <Label HorizontalOptions="Center" Text="ImageButton test1" />
+                </Button.ImageSource>
+            </Button>
+            <Label HorizontalOptions="Center" Text="Button test" />
         </StackLayout>
 
         <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
@@ -44,7 +44,7 @@
                     </FontImageSource>
                 </ImageButton.Source>
             </ImageButton>
-            <Label HorizontalOptions="Center" Text="ImageButton test2" />
+            <Label HorizontalOptions="Center" Text="ImageButton test" />
         </StackLayout>
 
         <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
@@ -58,7 +58,7 @@
                     </FontImageSource>
                 </Image.Source>
             </Image>
-            <Label HorizontalOptions="Center" Text="Image test1" />
+            <Label HorizontalOptions="Center" Text="Image test" />
         </StackLayout>
 
         <StackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
